@@ -21,6 +21,7 @@
 
 //     }
 // ]
+////////////// Backticks //////////////////////////////////////
 // let product='<section>';
 // for(let i=0 ; i<productDetails.length;i++){
 //     product+=`<figure>`
@@ -60,16 +61,16 @@
 // parentElement.appendChild(figElement);
 // // console.log(parentElement);
 
-// // removeAttribute
+// ///////////////////////////// removeAttribute////////////////////
 // imgElement.removeAttribute('alt');
 
-// // getAttribute
+// //////////////////////////// getAttribute////////////////////////////////////////
 // let url=imgElement.getAttribute('src');
 // console.log(url);
 // document.body.appendChild(parentElement);
 
 
-// Table Creation 
+///////////////////// Table Creation ////////////////////////////////
 
 let personDetails = [
     { Sno: '1', Name: 'Koti', Course: 'Jfs', Mobile: '9039284248' },
@@ -91,10 +92,10 @@ tableElement += '</tr>';
 
 for (let i = 0; i < personDetails.length; i++) {
     tableElement += '<tr>';
-    tableElement += '<td>' + personDetails[i].Sno + '</td>';
-    tableElement += '<td>' + personDetails[i].Name + '</td>';
-    tableElement += '<td>' + personDetails[i].Course + '</td>';
-    tableElement += '<td>' + personDetails[i].Mobile + '</td>';
+    tableElement += `<td>${personDetails[i].Sno}  </td>`;
+    tableElement += `<td>${personDetails[i].Name}  </td>`;
+    tableElement += `<td>${personDetails[i].Course}  </td>`;
+    tableElement += `<td>${personDetails[i].Mobile}  </td>`;
     tableElement += '</tr>';
 }
 
