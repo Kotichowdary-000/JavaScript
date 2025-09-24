@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+    #btn {
+      padding: 10px 20px;
+      background: lightblue;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    /* CSS hover = only style */
+    #btn:hover {
+      background: darkblue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="btn">Hover Me</button>
+
+  <script>
+    const btn = document.getElementById("btn");
+
+    // DOM events = logic
+    btn.addEventListener("mouseover", () => {
+      console.log("Mouse entered!");
+      btn.innerText = "Hovered!";
+    });
+
+    btn.addEventListener("mouseout", () => {
+      console.log("Mouse left!");
+      btn.innerText = "Hover Me";
+    });
+  </script>
+
+</body>
+</html>
